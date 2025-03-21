@@ -20,7 +20,7 @@ app.use(morgan("dev"));
 
 app.use(async (req, res, next) => {
   try {
-    const decision = await aj.protect(req, { requested: 1 });
+    const decision = await aj.protect(req, { requested: 100 });
 
     if (decision.isDenied()) {
       if (decision.reason.isRateLimit()) {

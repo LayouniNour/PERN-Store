@@ -12,13 +12,14 @@ export const aj = arcjet({
       mode: "LIVE",
       allow: [
         "CATEGORY:SEARCH_ENGINE",
+        "CATEGORY:TOOL",
       ],
     }),
     tokenBucket({
       mode: "LIVE",
-      refillRate: 5,
+      refillRate: 200,
       interval: 10,
-      capacity: 10,
+      capacity: 500,
     }),
   ],
 });
