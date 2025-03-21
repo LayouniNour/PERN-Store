@@ -21,6 +21,7 @@ A full-stack e-commerce application built with the PERN (PostgreSQL, Express, Re
 ## 🛠️ Tech Stack
 
 - **Frontend:**
+
   - React
   - TailwindCSS
   - DaisyUI
@@ -38,11 +39,13 @@ A full-stack e-commerce application built with the PERN (PostgreSQL, Express, Re
 ## 🚀 Quick Start
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/Asif-Zaman-Suvo/PERN-Store.git
 ```
 
 2. Install dependencies:
+
 ```bash
 # Root directory
 npm install
@@ -53,6 +56,7 @@ npm install
 ```
 
 3. Set up environment variables:
+
 ```env
 # .env
 PORT=3000
@@ -64,6 +68,7 @@ ARCJET_KEY=your_arcjet_key
 ```
 
 4. Run development servers:
+
 ```bash
 # Backend (root directory)
 npm run dev
@@ -73,11 +78,13 @@ npm run dev
 ```
 
 5. Seed the database:
+
 ```bash
 npm run seed
 ```
 
 ## 📁 Project Structure
+
 ├── backend/
 │ ├── config/
 │ │ └── db.js
@@ -129,7 +136,12 @@ This project is licensed under the ISC License.
 
 ## 👤 Author
 
-[MD Asifuzzaman Suvo]
+<h3 align="center">MD Asifuzzaman Suvo</h3>
+<p align="center">
+    <a href="https://www.linkedin.com/in/md-asifuzzaman-suvo/">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+    </a>
+</p>
 
 ---
 
