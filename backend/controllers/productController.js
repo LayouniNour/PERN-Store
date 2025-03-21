@@ -44,7 +44,7 @@ export const getSingleProduct = async (req, res) => {
   const { id } = req.params;
 
   try {
-    const singleProduct = await sql`SELECT * FROM products WHERE id = ${id}`;
+    const singleProduct = await sql`SELECT * FROM products  WHERE id = ${id}::uuid`;
     if (!singleProduct[0]) {
       return res
         .status(404)
@@ -63,7 +63,7 @@ export const updateProduct = async (req, res) => {
   try {
     const updatedProduct = await sql`UPDATE products
     SET name = ${name}, image = ${image}, price = ${price}
-    WHERE id = ${id}
+    WHERE id = ${id}::uuid
     RETURNING *
     `;
     if (updatedProduct.length === 0) {
@@ -87,7 +87,7 @@ export const deleteProduct = async (req, res) => {
   try {
     const deletedProduct = await sql
     `DELETE FROM products
-    WHERE id = ${id}
+    WHERE id = ${id}::uuid
     RETURNING *
     `;
 

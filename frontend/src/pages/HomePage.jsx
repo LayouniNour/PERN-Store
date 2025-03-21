@@ -1,22 +1,23 @@
-import React, { useEffect } from 'react'
-import { useProductStore } from '../store/useProductStore'
-import { PackageIcon, PlusCircleIcon, RefreshCwIcon } from 'lucide-react'
-import ProductCard from '../components/ProductCard'
+import React, { useEffect } from "react";
+import { useProductStore } from "../store/useProductStore";
+import { PackageIcon, PlusCircleIcon, RefreshCwIcon } from "lucide-react";
+import ProductCard from "../components/ProductCard";
+import AddProductModal from "../components/AddProductModal";
 
 const HomePage = () => {
+  const { products, isLoading, error, fetchProducts } = useProductStore();
 
-    const {products,isLoading,error,fetchProducts} = useProductStore()
+  useEffect(() => {
+    fetchProducts();
+  }, [fetchProducts]);
 
-    useEffect(() => {
-        fetchProducts()
-    }, [fetchProducts])
-
-    console.log(products)
+  console.log(products);
 
   return (
     <main className="max-w-6xl mx-auto px-4 py-8 ">
       <div className="flex justify-between items-center mb-8">
         <button
+          onClick={() => document.getElementById("add_product_modal").showModal()}
           className="btn btn-primary"
         >
           <PlusCircleIcon className="size-5 mr-2" />
@@ -26,6 +27,8 @@ const HomePage = () => {
           <RefreshCwIcon className="size-5" />
         </button>
       </div>
+
+      <AddProductModal />
 
       {error && <div className="alert alert-error mb-8">{error}</div>}
 
@@ -55,7 +58,7 @@ const HomePage = () => {
         </div>
       )}
     </main>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;
