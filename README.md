@@ -84,7 +84,7 @@ npm run seed
 ```
 
 ## 📁 Project Structure
-
+```tree
 ├── backend/
 │ ├── config/
 │ │ └── db.js
@@ -107,6 +107,7 @@ npm run seed
 │ └── index.html
 │
 └── package.json
+```
 
 ## 🔒 Security Features
 
