@@ -139,7 +139,7 @@ This project is licensed under the ISC License.
 
 <h3 align="center">MD Asifuzzaman Suvo</h3>
 <p align="center">
-    <a href="https://www.linkedin.com/in/md-asifuzzaman-suvo/">
+    <a href="https://www.linkedin.com/in/md-asifuzzaman-shuvo" target="_blank" rel="noopener noreferrer">
         <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
     </a>
 </p>
